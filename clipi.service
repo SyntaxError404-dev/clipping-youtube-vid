@@ -1,0 +1,19 @@
+[Unit]
+Description=Clipi local clipping studio
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/hatch/workspace/clipstudio/server
+ExecStart=/usr/bin/node dist/index.js
+Restart=always
+RestartSec=5
+TimeoutStopSec=10
+KillMode=control-group
+Environment=PORT=4000
+Environment=NODE_USE_ENV_PROXY=1
+
+[Install]
+WantedBy=default.target

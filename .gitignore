@@ -1,0 +1,19 @@
+# Clipi — local only, never pushed
+data/
+*.log
+
+# Rebuilt by ./setup.sh — never push
+node_modules/
+server/node_modules/
+client/node_modules/
+client/dist/
+server/dist/
+server/tools/venv/
+server/tools/venv-dl/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+*.tsbuildinfo

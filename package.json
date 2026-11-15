@@ -1,0 +1,1 @@
+{"devDependencies":{"concurrently":"^9.0.0"},"name":"clipi","private":true,"scripts":{"build":"npm run build --prefix server && npm run build --prefix client","dev":"concurrently -k -n server,client \"npm run dev --prefix server\" \"npm run dev --prefix client\"","setup":"bash setup.sh","start":"npm run start --prefix server"},"version":"1.0.0"}
